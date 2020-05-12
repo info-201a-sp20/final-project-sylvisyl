@@ -8,13 +8,16 @@ We are interested in <h4>*housing in King County*</h4>because we all attend coll
 <br>
 
 We found these three data driven projects to help us understand the domain:
+
  1. [United States House Price Index MoM Change](https://tradingeconomics.com/Weunited-states/housing-index)
 
  It documents the percentage of change in average housing prices throughout the country every month.
- 1. [Barchart: Housing Price Index](https://www.barchart.com/economy/housing)
- 
+
+ 2. [Barchart: Housing Price Index](https://www.barchart.com/economy/housing)
+
  It’s a website that uses graphic visualizations and spreadsheets to present housing price indexes in different continents or different states within the USA. (A house price index measures the price changes of residential housing as a percentage change from some specific start date)
- 1. [Neighborhood Scqut: Washingotn Appericaiton rates trend and housing market data](https://www.neighborhoodscout.com/wa/real-estate)
+
+ 3. [Neighborhood Scqut: Washingotn Appericaiton rates trend and housing market data](https://www.neighborhoodscout.com/wa/real-estate)
 
  It has an interactive map that demonstrate how different regions were divided and an interactive charts next to it for the users to narrow down the region selection.
 
