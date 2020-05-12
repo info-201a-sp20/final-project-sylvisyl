@@ -29,7 +29,7 @@ We found these three data driven projects to help us understand the domain:
 
  - **What zip codes have the most/least number of sales?**
 
- This can be answered by the king county house sale data and by grouping the zip codes and sum up the number of houses each location sale
+ This can be answered by the king county house sale data and by grouping the zip codes and sum up the number of houses each location sale.
 
 
  - **what the average square foot of houses purchases are?**
@@ -38,7 +38,7 @@ We found these three data driven projects to help us understand the domain:
 
  - **What is the quality of preschool education in King County?**
 
- This can be answered by comparing if the King County Average CLASS Scores meet the score goal from SPP
+ This can be answered by comparing if the King County Average CLASS Scores meet the score goal from SPP.
 
 <br>
 
@@ -70,7 +70,7 @@ We found these three data driven projects to help us understand the domain:
 
 ##### [SPP Average CLASS Scores ](https://data.seattle.gov/Education/SPP-Average-CLASS-Scores/fx5g-857s/data)
 
-- This data was collected by the King County Department of Education. This data set gives scores to Seattle Preschool Program in various categories, and compares them to two benchmark programs: Head Start or Early Achievers and SPP's overall goal
+- This data was collected by the King County Department of Education. This data set gives scores to Seattle Preschool Program in various categories, and compares them to two benchmark programs: Head Start or Early Achievers and SPP's overall goal.
 
 - It has It has **4** *rows* and **7** *columns*.
 
