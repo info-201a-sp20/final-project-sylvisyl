@@ -57,7 +57,7 @@ We found these three data driven projects to help us understand the domain:
 
  - The data was organized by the website Seattle Government data. In mid-2017 king country began a process to reform the way “Police Inquests” are conducted, and they collected the data only after the inquest process had been completed. It also provides the situation where people were hurt.
 
- - It has **120** *rows* and **13** *columns*.
+ - It has **120** *rows* and **28** *columns*.
 
  - This dataset can also help answering how house prices have changed in King Country. We can easily compare if those shooting cases affect the housing prices.
 
