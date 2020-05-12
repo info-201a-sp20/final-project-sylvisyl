@@ -9,7 +9,7 @@ We are interested in <h4>*housing in King County*</h4>because we all attend coll
 
 We found these three data driven projects to help us understand the domain:
 
- 1. [United States House Price Index MoM Change](https://tradingeconomics.com/Weunited-states/housing-index)
+ 1. [United States House Price Index MoM Change](https://tradingeconomics.com/united-states/housing-index)
 
  It documents the percentage of change in average housing prices throughout the country every month.
 
