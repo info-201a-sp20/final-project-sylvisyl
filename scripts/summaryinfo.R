@@ -7,13 +7,6 @@ kc_housing <- read.csv("data/kc_house_data.csv",
 library("dplyr")
 View(kc_housing)
 
-summary_table <- kc_housing %>%
-  summarize(avg_price = mean(price),
-            max_price = max(price),
-            min_price = min(price),
-            oldest_house_year_built = min(yr_built),
-            newest_house_year_built = max(yr_built)
-  )
 get_summary_info <- function(dataset) {
   ret <- list()
   ret$length <- length(dataset)
@@ -27,3 +20,7 @@ get_summary_info <- function(dataset) {
 
 get_summary_info(kc_housing)
 
+install.packages("lintr")
+library("lintr")
+install.packages("styler")
+library("styler")
