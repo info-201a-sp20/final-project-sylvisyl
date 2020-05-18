@@ -1,0 +1,22 @@
+---
+title: "king county housing"
+author: "AH-6"
+date: "5/17/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r include=FALSE}
+library(knitr)
+source("scripts/Aggregate Table script.R")
+```
+
+```{r echo=FALSE}
+kable(summary_table(kc_housing),
+      row.names = NA, 
+      col.names = c("Zipcode", "Average Price", "Bedrooms", "Bathrooms", "Average living space", "Year built", "Condition"))
+```
+
