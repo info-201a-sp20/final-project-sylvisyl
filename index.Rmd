@@ -27,4 +27,17 @@ kable(summary_table(kc_housing),
 - The zipcode that has the highest housing price is `r most_expensive_zip`, which is $ `r most_expensive_price`.
 - The zipcode that has the oldest houses is `r oldest_zipcode`, which was in average built back in the `r oldest_year`.
 
-## The relationship between the housing price and the size of the living space
+## First visualization 
+
+> The following visualization is trying to visualize the relationship between housing price and the size of the living space. Since the original data is too big, the data are sorted based on zipcode. 
+
+```{r include=FALSE}
+source("scripts/visualization_1.R")
+```
+
+```{r echo=FALSE, warning=FALSE, message=FALSE}
+zipcode_summary_plot
+```
+
+- Overall, there is a **positive relationship** between the average price and the average sqft of the living space. 
+- Although this may vary based on the zipcode, most of the houses in King county have less than **3000 sqft** living space and the accordingly price remain below **one million dollar**. 
