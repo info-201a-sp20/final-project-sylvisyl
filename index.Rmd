@@ -9,6 +9,10 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+## Summary Table of King County housing sale
+
+> In order to look into the King County housing data, we sorted the following table based on **zipcode** to let users compare the King county housing sale condition based on **different areas**. The price, the size of the living space, the year it is built, and the house's condition are summarized by **averaging** the data so that the data shown in the table are more **representative**. 
+
 ```{r include=FALSE}
 library(knitr)
 source("scripts/Aggregate Table script.R")
@@ -20,3 +24,7 @@ kable(summary_table(kc_housing),
       col.names = c("Zipcode", "Average Price", "Bedrooms", "Bathrooms", "Average living space", "Year built", "Condition"))
 ```
 
+- The zipcode that has the highest housing price is `r most_expensive_zip`, which is $ `r most_expensive_price`.
+- The zipcode that has the oldest houses is `r oldest_zipcode`, which was in average built back in the `r oldest_year`.
+
+## The relationship between the housing price and the size of the living space
