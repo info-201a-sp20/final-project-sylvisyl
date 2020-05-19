@@ -1,0 +1,44 @@
+---
+title: <font color = "white">king county housing</font>
+output:
+  html_document:
+    css: styles.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+<div id = "navbar">
+  <ul id = "a">
+    <li id = "b">
+      <a id = "left" href = "index.html">
+        Summary
+      </a>
+    </li>
+    <li id = "b">
+      <a id = "left" class = "active">
+        Table
+      </a>
+    </li>
+    <li id = "b">
+      <a id = "left" href = "charts.html">
+        Charts
+      </a>
+    </li>
+  </ul>
+</div>
+
+```{r include=FALSE}
+library(knitr)
+source("scripts/Aggregate Table script.R")
+```
+
+```{r echo=FALSE}
+kable(summary_table(kc_housing),
+      row.names = NA, 
+      col.names = c("Zipcode", "Average Price", "Bedrooms", "Bathrooms", "Average living space", "Year built", "Condition"))
+```
+
+- The zipcode that has the highest housing price is `r most_expensive_zip`, which is $ `r most_expensive_price`.
+- The zipcode that has the oldest houses is `r oldest_zipcode`, which was in average built back in the `r oldest_year`.
+
