@@ -16,11 +16,11 @@ year_built_chart <- kc_housing %>%
    group_by(yr_built) %>%
    summarise(avg_price = mean(price))
 
-year_build_plot <- ggplot(year_built_chart,aes(x=yr_built, y=avg_price)) +
+year_build_plot <- ggplotly(ggplot(year_built_chart,aes(x=yr_built, y=avg_price)) +
   geom_line()+
   geom_point()+
   geom_smooth()+
   labs(x = "built year",
        y = "Average selling price",
-       title = "Trends of mean price and built year")
-ggplotly(year_build_plot)  
+       title = "Trends of mean price and built year"))
+  

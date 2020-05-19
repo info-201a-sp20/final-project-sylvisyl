@@ -43,3 +43,17 @@ zipcode_summary_plot
 - Overall, there is a **positive relationship** between the average price and the average sqft of the living space. 
 - Although this may vary based on the zipcode, most of the houses in King county have less than **3000 sqft** living space and the accordingly price remain below **one million dollar**. 
 
+## Second visualization
+
+> The attached visualization is illustrating the correlation between the built year for the house and the average selling price within that year. The discrete data is arranged in chronological order. Since the data fluctuates a lot, a trendline would be considered as necessary to specify and indicate the overal trends.
+
+```{r include=FALSE}
+source("scripts/visual_3.R")
+```
+
+```{r echo=FALSE, warning=FALSE, message=FALSE}
+year_build_plot
+```
+
+- Generally speaking, the correlation between average selling price and the built year of the house is obvious. Around 1955, there is a turning point for the correlation. Before 1955, there is a **negative relationship** between them. After 1955, they seem to be **proportional** to each other.
+- Most of the houses selling prices are within the range of **450 thousand** and **700 thousand** dollars. 
