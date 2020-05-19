@@ -18,5 +18,8 @@ year_built_chart <- kc_housing %>%
 
 year_build_plot <- ggplot(year_built_chart,aes(x=yr_built, y=avg_price)) +
   geom_line()+
-  geom_point()
+  geom_point()+
+  labs(x = "built year",
+       y = "Average selling price",
+       title = "Trends of mean price and built year")
 ggplotly(year_build_plot)  
