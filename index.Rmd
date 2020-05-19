@@ -12,7 +12,7 @@ knitr::opts_chunk$set(echo = TRUE)
 <div id = "navbar">
   <ul id = "a">
     <li id = "b">
-      <a id = "left" class = "active" href = "Portfolio.html">
+      <a id = "left" class = "active">
         home
       </a>
     </li>
