@@ -1,7 +1,7 @@
 
 rm(list = ls())
 
-kc_housing <- read.csv("data/kc_house_data.csv",
+kc_housing <- read.csv("../data/kc_house_data.csv",
                  stringsAsFactors = FALSE)
 
 library("dplyr")
