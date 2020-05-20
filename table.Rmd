@@ -28,6 +28,9 @@ knitr::opts_chunk$set(echo = TRUE)
   </ul>
 </div>
 
+## Summary Table of King County housing sale
+
+In order to look into the King County housing data, we sorted the following table based on **zipcode** to let users compare the King county housing sale condition based on **different areas**. The price, the size of the living space, the year it is built, and the house's condition are summarized by **averaging** the data so that the data shown in the table are more **representative**. 
 ```{r include=FALSE}
 library(knitr)
 source("scripts/Aggregate Table script.R")

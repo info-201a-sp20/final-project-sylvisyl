@@ -43,6 +43,8 @@ zipcode_summary_plot
 - Overall, there is a **positive relationship** between the average price and the average sqft of the living space. 
 - Although this may vary based on the zipcode, most of the houses in King county have less than **3000 sqft** living space and the accordingly price remain below **one million dollar**. 
 
+<br>
+
 ## Second visualization
 
 > The following 2 graphs are indicating the number of sold houses in each month. Since the dataset only documents the data from beginning of May 2014 to ending of May 2015, we figure that make them seperate plots would be better for visualizations and comparisions. The reason why we use bar graph is that :
@@ -60,6 +62,8 @@ month_plot_15
 
 - From the data that we have, it's obvious that the average number of sold houses in 2014 are **significantly higher** than that in 2015.
 - By comparing these two plots, we may conclude that _people's desire of purchasing houses vary along the temperature_. During summer and spring, the sold numbers are **relatively higher** than the other 2 seasons. 
+
+<br>
 
 ## Third visualization
 
