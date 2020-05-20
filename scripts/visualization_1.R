@@ -5,8 +5,12 @@ library(styler)
 library(ggplot2)
 library(plotly)
 
+<<<<<<< HEAD
 kc_housing <- read.csv("data/kc_house_data.csv",
                        stringsAsFactors = FALSE)
+=======
+kc_housing <- read.csv("../data/kc_house_data.csv", stringsAsFactors = FALSE)
+>>>>>>> 8a5ce49bf98455bc2fe8e59a0a8e2622fe60eba0
 
 
 # Visualization section
