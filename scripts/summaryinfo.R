@@ -1,11 +1,11 @@
 
-rm(list = ls())
 
-kc_housing <- read.csv("../data/kc_house_data.csv",
+
+kc_housing <- read.csv("/data/kc_house_data.csv",
                  stringsAsFactors = FALSE)
 
 library("dplyr")
-View(kc_housing)
+
 
 get_summary_info <- function(dataset) {
   ret <- list()
@@ -18,9 +18,6 @@ get_summary_info <- function(dataset) {
   return (ret)
 }
 
-get_summary_info(kc_housing)
 
-install.packages("lintr")
-library("lintr")
-install.packages("styler")
-library("styler")
+
+summary_info <- get_summary_info(kc_housing)
