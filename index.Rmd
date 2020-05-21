@@ -35,23 +35,26 @@ source("scripts/summaryinfo.R")
 
 # **Introduction**
 
-<font size = 6>We are interested in *housing in King County* because we all attend college in King County and consider it to be our home, even if just temporarily. Housing and homelessness are hot topics in Seattle right now and pressing issues. We’d all like to learn more about it.
+<br>
+
+<div id = "content">
+<font size = 6>We are interested in *housing in King County* because we all attend college in King County and consider it to be our home, even if just temporarily. Housing and homelessness are hot topics in Seattle right now and pressing issues. We’d all like to learn more about it, contribute our power to the community
 
 <br>
 
-We used this dataset to help us better understand housing in King Country: [House Sales in King County USA](https://www.kaggle.com/harlfoxem/housesalesprediction). This data was collected by the King County Department of Housing and is hosted on a website called Kaggle. And it includes specific information regarding specific living space in sqft and numbers of bedrooms and bathrooms. It has **21613** rows and **21** columns. By analysing this dataset, we hope to find out:
+We used this dataset to help us better understand housing in King Country: [House Sales in King County USA](https://www.kaggle.com/harlfoxem/housesalesprediction). This data was collected by the King County Department of Housing and is hosted on a website called Kaggle. And its informations included such as specific living space in sqft and numbers of bedrooms and bathrooms are really specific. After analysing the dataset, we hope to find out:
+
+- How house prices have changed in King County?
+
+- What zip codes have the most/least number of sales?
+
+- What are the average square foot of house purchases?
 
 <br>
 
-how house prices have changed in King County?
+## **Summary Info:**
 
-what zip codes have the most/least number of sales?
-
-what are the average square foot of house purchases?
-
-
-## Summary Info
-
-There are `r get_summary_info(kc_housing)[1]` columns in this data frame. The average price of the homes sold are $`r get_summary_info(kc_housing)[3]`. The oldest house sold was built in `r get_summary_info(kc_housing)[4]`, and the newest was built in `r get_summary_info(kc_housing)[5]`. The average square footage above ground was `r get_summary_info(kc_housing)[6]` ft. 
+For the dataset, it has are **`r get_summary_info(kc_housing)[1]`** columns in this data frame. The average price of the homes sold are $**`r get_summary_info(kc_housing)[3]`**. The *oldest* house sold was built in **`r get_summary_info(kc_housing)[4]`**, and the *newest* was built in **`r get_summary_info(kc_housing)[5]`**. The average square footage above ground was **`r get_summary_info(kc_housing)[6]`** ft. 
 
 </font>
+</div>

@@ -1,41 +1,34 @@
 body{
-  text-align: center;
+  text-align: left;
   margin:10px;
 }
+
 #header{
+  text-align: center;
   font-family: Arial, Helvetica, sans-serif;
    background-image: url("background1.jpg");
    margin-bottom: 14px;
    padding: 30px;
    box-shadow: 4px 4px 4px #111;
 }
+
 #navbar{
   position:sticky;
   margin-right:-10px;
   top:0;
 }
-#portfolio{
-  margin:20px;
-  margin-top:50px;
-}
+
 #content{
-  font-family: "Comic Sans MS", cursive, sans-serif;
-  margin-top:-280px;
-  margin-left:30px;
-  margin-right:260px;
+  padding: 30px;
+  font-family: "Times New Roman", Times, serif;
+  margin:auto;
+  margin-bottom: 30px;
   border-style:solid;
-  border-width:1px;
+  border-width:3px;
   float:left;
   box-shadow: 3px 3px 3px -1px grey;
 }
-#footer{
-margin-top:580;
-width:100%;
-height:50px;
-border-top: dashed;
-border-width:1px;
 
-}
 #a {
   list-style-type: none;
   margin: 0;
@@ -55,6 +48,7 @@ border-width:1px;
   padding: 14px 16px;
   text-decoration: none;
 }
+
 #right{
   float: right;
 }
@@ -68,21 +62,4 @@ border-width:1px;
 
 .active {
   background-color: #4c7dae;
-}
-
-#a1{
-  /*list-style-type: none;*/
-  float:right;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color:;
-  border-style: groove;
-  border-radius: 12px;
-  border-width: 8px;
-}
-#b1{
-  margin-top: 5px;
-  border-left: 6px solid #4c7dae;
-  background-color: #e1e1ea;
 }

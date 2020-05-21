@@ -38,8 +38,9 @@ source("scripts/Aggregate Table script.R")
 
 ```{r echo=FALSE}
 kable(summary_table(kc_housing),
-      row.names = NA, 
-      col.names = c("Zipcode", "Average Price", "Bedrooms", "Bathrooms", "Average living space", "Year built", "Condition"))
+      row.names = NA,
+      col.names = c("Zipcode", "Average Price", "Bedrooms", "Bathrooms",
+                    "Average living space", "Year built", "Condition"))
 ```
 
 - The zipcode that has the highest housing price is `r most_expensive_zip`, which is $ `r most_expensive_price`.
