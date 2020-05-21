@@ -42,7 +42,7 @@ source("scripts/summaryinfo.R")
 
 <br>
 
-We used this dataset to help us better understand housing in King Country: [House Sales in King County USA](https://www.kaggle.com/harlfoxem/housesalesprediction). This data was collected by the King County Department of Housing and is hosted on a website called Kaggle. And its informations included such as specific living space in sqft and numbers of bedrooms and bathrooms are really specific. After analysing the dataset, we hope to find out:
+We used this dataset to help us better understand housing in King Country: [House Sales in King County USA](https://www.kaggle.com/harlfoxem/housesalesprediction). This data was collected by the King County Department of Housing and is hosted on a website called Kaggle. Its informations included such as specific living space in sqft,  numbers of bedrooms and bathrooms are really specific. After analysing the dataset, we hope to find out:
 
 - How house prices have changed in King County?
 
