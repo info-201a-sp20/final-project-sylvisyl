@@ -43,6 +43,6 @@ kable(summary_table(kc_housing),
                     "Average living space", "Year built", "Condition"))
 ```
 
-- The zipcode that has the highest housing price is `r most_expensive_zip`, which is $ `r most_expensive_price`.
+- The zipcode that has the highest housing price is `r most_expensive_zip`, which is $ `r format(most_expensive_price, scientific=F)`.
 - The zipcode that has the oldest houses is `r oldest_zipcode`, which was in average built back in the `r oldest_year`.
 

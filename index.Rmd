@@ -54,7 +54,7 @@ We used this dataset to help us better understand housing in King Country: [Hous
 
 ## **Summary Info:**
 
-For the dataset, it has are **`r get_summary_info(kc_housing)[1]`** columns in this data frame. The average price of the homes sold are $**`r get_summary_info(kc_housing)[3]`**. The *oldest* house sold was built in **`r get_summary_info(kc_housing)[4]`**, and the *newest* was built in **`r get_summary_info(kc_housing)[5]`**. The average square footage above ground was **`r get_summary_info(kc_housing)[6]`** ft. 
+For the dataset, it has are **`r get_summary_info(kc_housing)[1]`** columns in this data frame. The average price of the homes sold are $**`r format(get_summary_info(kc_housing)[3], scientific=F)`**. The *oldest* house sold was built in **`r get_summary_info(kc_housing)[4]`**, and the *newest* was built in **`r get_summary_info(kc_housing)[5]`**. The average square footage above ground was **`r get_summary_info(kc_housing)[6]`** ft. 
 
 </font>
 </div>
