@@ -5,7 +5,7 @@ library(styler)
 library(ggplot2)
 library(plotly)
 
-kc_housing <- read.csv("../data/kc_house_data.csv",
+kc_housing <- read.csv("data/kc_house_data.csv",
                        stringsAsFactors = FALSE)
 kc_housing$date <- as.Date(kc_housing$date, "%Y%m%d")
 

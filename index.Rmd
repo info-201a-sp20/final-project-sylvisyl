@@ -8,6 +8,9 @@ output:
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+```{r include=FALSE}
+source("scripts/summaryinfo.R")
+```
 
 <div id = "navbar">
   <ul id = "a">
