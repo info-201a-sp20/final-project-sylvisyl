@@ -1,7 +1,6 @@
 
 
-
-kc_housing <- read.csv("/data/kc_house_data.csv",
+kc_housing <- read.csv("data/kc_house_data.csv",
                  stringsAsFactors = FALSE)
 
 library("dplyr")
@@ -20,4 +19,5 @@ get_summary_info <- function(dataset) {
 
 
 
-summary_info <- get_summary_info(kc_housing)
+list <- get_summary_info(kc_housing)
+

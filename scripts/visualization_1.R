@@ -5,7 +5,9 @@ library(styler)
 library(ggplot2)
 library(plotly)
 
-kc_housing <- read.csv("../data/kc_house_data.csv", stringsAsFactors = FALSE)
+
+kc_housing <- read.csv("data/kc_house_data.csv", stringsAsFactors = FALSE)
+
 
 
 # Visualization section
