@@ -13,7 +13,6 @@ knitr::opts_chunk$set(echo = TRUE)
 source("scripts/summaryinfo.R")
 ```
 
->>>>>>> 9e44569d7cf4118604b3a2ac02b2b8b7862ec3f2
 <div id = "navbar">
   <ul id = "a">
     <li id = "b">
@@ -51,8 +50,8 @@ what zip codes have the most/least number of sales?
 what are the average square foot of house purchases?
 
 
-Summary Info
+## Summary Info
 
-There are 21 columns in this data frame. Their names are "Id, date, price, bedrooms, bathrooms, sqft_living, sqft_lot, floors, waterfront, view, condition, grade, sqft_above, sqft_basement, yr_built, yr_renovated, zipcode, lat, long, sqft_living15, sqft_lot15". The average price of the homes sold are $54,088. The oldest house sold was built in 1900, and the newest was built in 2015. The average square footage above ground was 1,788 ft. 
+There are `r get_summary_info(kc_housing)[1]` columns in this data frame. The average price of the homes sold are $`r get_summary_info(kc_housing)[3]`. The oldest house sold was built in `r get_summary_info(kc_housing)[4]`, and the newest was built in `r get_summary_info(kc_housing)[5]`. The average square footage above ground was `r get_summary_info(kc_housing)[6]` ft. 
 
 </font>
