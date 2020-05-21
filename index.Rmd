@@ -50,12 +50,9 @@ what zip codes have the most/least number of sales?
 
 what are the average square foot of house purchases?
 
+
+Summary Info
+
+There are 21 columns in this data frame. Their names are "Id, date, price, bedrooms, bathrooms, sqft_living, sqft_lot, floors, waterfront, view, condition, grade, sqft_above, sqft_basement, yr_built, yr_renovated, zipcode, lat, long, sqft_living15, sqft_lot15". The average price of the homes sold are $54,088. The oldest house sold was built in 1900, and the newest was built in 2015. The average square footage above ground was 1,788 ft. 
+
 </font>
-```{r, include=FALSE}
-source("scripts/summaryinfo.R")
-```
-
-```{r, echo=FALSE}
-summary_info
-```
-

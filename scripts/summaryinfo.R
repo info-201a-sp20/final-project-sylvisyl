@@ -21,3 +21,4 @@ get_summary_info <- function(dataset) {
 
 list <- get_summary_info(kc_housing)
 
+
