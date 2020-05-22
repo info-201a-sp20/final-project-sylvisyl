@@ -2,6 +2,8 @@
 
 <br>
 
+Here is the link for our GitHub Page view: https://info-201a-sp20.github.io/final-project-sylvisyl/
+
 ## Domain of interest
 We are interested in <h4>*housing in King County*</h4>because we all attend college in King County and consider it to be our home, even if just temporarily. Housing and homelessness are hot topics in Seattle right now and pressing issues. We’d all like to learn more about it.
 
