@@ -63,7 +63,11 @@ page_one <- tabPanel(
       second_side_widget
     ),
     mainPanel(
-      plotOutput(outputId = "scatter")
+      p("The following visualization is a scatter plot that
+        can help you to visualize different aspect of housing
+        in relation to the housing price based on zipcode
+        in King county."),
+      plotlyOutput(outputId = "scatter")
     )
   )
 )

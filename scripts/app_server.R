@@ -5,6 +5,7 @@ library(dplyr)
 library(ggplot2)
 library(lintr)
 library(styler)
+library(plotly)
 
 kc_housing <- read.csv("../data/kc_house_data.csv", stringsAsFactors = FALSE)
 
@@ -34,7 +35,7 @@ server <- function(input, output) {
   })
 
 # first page main visualization 
-  output$scatter <- renderPlot({
+  output$scatter <- renderPlotly({
     title <- paste0("Relationship between price and ",
                     input$select, " based on zipcode")
     plot <- ggplot(data = zipcode_summary) +
