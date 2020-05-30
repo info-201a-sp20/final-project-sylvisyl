@@ -47,4 +47,27 @@ server <- function(input, output) {
       )
     return(plot)
   })
+  
+# summary page table
+summary_table <- kc_housing %>%
+    group_by(zipcode) %>%
+    select(
+      zipcode, price, bedrooms, bathrooms,
+      sqft_living, yr_built, condition
+    ) %>%
+    summarize(
+      avg_price = round(mean(price, na.rm = TRUE), 0),
+      num_bedrooms = round(mean(bedrooms, na.rm = TRUE), 0),
+      num_bathrooms = round(mean(bathrooms, na.rm = TRUE), 0),
+      avg_sqft_living = round(mean(sqft_living, na.rm = TRUE), 1),
+      avg_yr_built = round(mean(yr_built, na.rm = TRUE), 0),
+      avg_condition = round(mean(condition, na.rm = TRUE), 1)
+    )
+colnames(summary_table) <-  c("Zipcode", "Average Price", "Bedrooms", "Bathrooms",
+                              "Average living space", "Year built", "Condition")
+
+
+  output$table <- renderTable({
+    summary_table
+  })
 }
