@@ -20,7 +20,11 @@ overview <- tabPanel(
       to us. The data set can be found here: 
       https://www.kaggle.com/harlfoxem/housesalesprediction"),
     h3("Questions"),
-    p("*Insert questions we are analyzing*"),
+    p("The questions we aim to answer using this dataset will help to illustrate
+      what housing in Seattle looked like in 2015. We will be looking at factors
+      like zipcode, number of bedrooms, number of bathrooms, squarefootage,
+      year built, condition and cost, and analyzing how they are correlated, if at all. Several specific 
+      questions we have are, how do houses vary by zipcode? *add in more*"),
     img("", src = "https://images.freeimages.com/images/large-previews/9b4/seattle-skyline-1541208.jpg")
    )
 )
