@@ -10,10 +10,12 @@ kc_housing <- read.csv("../data/kc_house_data.csv", stringsAsFactors = FALSE)
 
 source("first_page.R")
 source("summary_takeaway.R")
+source("overview_page.R")
 
 
 ui <- navbarPage(
   "King County Housing",
+  overview,
   page_one,
   summary_page
 )
