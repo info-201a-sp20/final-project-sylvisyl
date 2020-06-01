@@ -3,6 +3,7 @@ library(shiny)
 library(ggplot2)
 library(dplyr)
 library(plotly)
+library(leaflet)
 
 # source
 source("app_ui.R")
