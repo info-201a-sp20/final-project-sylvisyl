@@ -22,7 +22,7 @@ summary_crime_map <- leaflet() %>%
     color = "red"
   ) %>%
   addCircleMarkers(
-    data = kc_crime(),
+    data = kc_crime,
     lng = ~long,
     lat = ~lat,
     color = "blue")
