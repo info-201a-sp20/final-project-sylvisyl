@@ -5,6 +5,7 @@ library(dplyr)
 library(ggplot2)
 library(lintr)
 library(styler)
+library(leaflet)
 
 kc_housing <- read.csv("../data/kc_house_data.csv", stringsAsFactors = FALSE)
 kc_crime <- kc_housing %>%
