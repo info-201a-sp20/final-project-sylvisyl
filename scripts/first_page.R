@@ -60,11 +60,13 @@ page_one <- tabPanel(
       tags$div(class = "Calculator",
         h3("Mortgage Calculator"),
       ),
+      br(),
       calculator_1,
       calculator_2,
       tags$div(class = "Calculator",
                textOutput(outputId = "result"),
       ),
+      br(),
       second_side_widget
     ),
     mainPanel(
