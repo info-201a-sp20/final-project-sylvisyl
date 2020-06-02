@@ -24,7 +24,8 @@ summary_page <- tabPanel(
     the houses in King county have less than 3000 sqft living
     space and the accordingly price remain below one million
     dollar"),
-  h4("Some implications:"),
+  br(),
+  h4("Implications:"),
   p("Through analyzing the data, it is obvious to say that
     King county housing condition is closely related to King
     county household condition. The King county housing dataset
@@ -32,6 +33,7 @@ summary_page <- tabPanel(
     three to four people per household. King county people
     feel comfortable living and are able to afford a house
     that is less than 3000 sqft living space."),
+  br(),
   tableOutput(outputId = "table"),
   br(),
   h3("Second summary takeaway"),
