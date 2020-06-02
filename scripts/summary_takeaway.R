@@ -37,11 +37,12 @@ summary_page <- tabPanel(
   tableOutput(outputId = "table"),
   br(),
   h3("Second summary takeaway"),
-  p("Based on the crime rates intereact maps and the following attache
+  p("Based on a specifc condition of the crime rates intereact maps and the following attache
   chart (blue = houses, and red = crime cases), we can notice that the
     region that often happen crime cases tend to have lower selling prices,
-    compared with the high selling prices regions. The houses have higher prices
-    tend to locate in suburb. Many factors play the role in that correlations but
+    compared with the high selling prices regions. The houses have higher prices(in this case,
+    more than $2500000) tend to locate in suburb and away from the chaotic regions.
+    Many factors play the role in that correlations but
     no doubuts that the security is one of the main one."),
   h4("Implications:"),
   p("By play with the graph and analyzing the correlation between crime rates and 
