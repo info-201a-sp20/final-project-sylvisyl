@@ -50,6 +50,19 @@ summary_page <- tabPanel(
     the crime rates around it."),
   leafletOutput("crime_map_summary"),
   br(),
+  h3("Third summary takeaway"),
+  p("The Housing in Different Years tab shows several clear trends in housing from
+    1900 to 2015. Overall, it's clear that houses are gettting bigger and are 
+    built more frequently. The total number of houses built, total bedrooms, total
+    bathrooms, and total floors, all show a clear trend upwards from 1900 to 2015."),
+  h4("Implications"),
+  p("We can infer that there was an increased demand for housing over the last century
+    because of the fast increase in number of houses built. It's interesting to then
+    see that the houses built were also increasingly larger. This shows that perhaps
+    the average person looking for housing in Seattle was growing increasingly 
+    wealthy. This could help explain the lack of affordable housing and increasing 
+    homelessness population in Seattle."),
+  plotlyOutput("bar_chart")
   )
 )
 
