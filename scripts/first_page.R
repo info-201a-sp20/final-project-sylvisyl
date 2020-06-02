@@ -57,10 +57,14 @@ page_one <- tabPanel(
   titlePanel("King county housing price"),
   sidebarLayout(
     sidebarPanel(
-      h3("Mortgage Calculator"),
+      tags$div(class = "Calculator",
+        h3("Mortgage Calculator"),
+      ),
       calculator_1,
       calculator_2,
-      textOutput(outputId = "result"),
+      tags$div(class = "Calculator",
+               textOutput(outputId = "result"),
+      ),
       second_side_widget
     ),
     mainPanel(

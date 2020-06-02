@@ -25,6 +25,6 @@ overview <- tabPanel(
       like zipcode, number of bedrooms, number of bathrooms, squarefootage,
       year built, condition and cost, and analyzing how they are correlated, if at all. Several specific 
       questions we have are, how do houses vary by zipcode? *add in more*"),
-    img("", src = "https://images.freeimages.com/images/large-previews/9b4/seattle-skyline-1541208.jpg")
+    img("", src = "https://images.freeimages.com/images/large-previews/9b4/seattle-skyline-1541208.jpg"),
    )
 )

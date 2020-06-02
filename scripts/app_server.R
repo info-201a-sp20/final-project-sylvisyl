@@ -47,7 +47,20 @@ server <- function(input, output) {
       )
     return(plot)
   })
-  
+
+# Third page visualization
+  output$histogram <- renderPlotly({
+    his_plot <- ggplot(data = year_selected) +
+    geom_line(mapping = aes_string(x = "yr_built", y = input$y_axis), color = input$color) +
+    scale_x_continuous(limits = input$Interval) +
+      labs(
+        title = "Overview of King Country Housing each year",
+        x = "Year built (years)",
+        y = NULL
+      )
+    return(his_plot)
+  })
+
 # summary page table
 summary_table <- kc_housing %>%
     group_by(zipcode) %>%
@@ -70,79 +83,4 @@ colnames(summary_table) <-  c("Zipcode", "Average Price", "Bedrooms", "Bathrooms
   output$table <- renderTable({
     summary_table
   })
-  
-  #crime map server
-  crime_filtered <- reactive({
-    crime %>%
-      filter(Officer.Injured == input$case) %>%
-      select(Date,
-             Longitude,
-             Latitude,
-             Officer.Injured)
-  })
-  kc_filtered <- reactive({
-    kc_housing %>%
-      filter(zipcode >= input$zc[1]) %>%
-      filter(zipcode <= input$zc[2]) %>%
-      filter(price >= input$prices[1]) %>%
-      filter(price <= input$prices[2]) %>%
-      select(price,
-             bedrooms,
-             bathrooms,
-             zipcode,
-             lat,
-             long)
-  })
-  output$crime_map <- renderLeaflet({
-    leaflet() %>%
-      addProviderTiles("CartoDB.Positron") %>%
-      addCircleMarkers(
-        data = crime_filtered(),
-        lng = ~Longitude,
-        lat = ~Latitude,
-        color = "red",
-        popup = paste0(crime_filtered()$Longtitude,
-                       "\n",
-                       crime_filtered()$Latitude)
-      ) %>%
-      addCircleMarkers(
-        data = kc_filtered(),
-        lng = ~long,
-        lat = ~lat,
-        color = "blue",
-        popup = paste0("price:",
-                       kc_filtered()$price,
-                       "\n",
-                       "bedroom#:",
-                       kc_filtered()$bedrooms,
-                       "\n",
-                       "bathroom#:",
-                       kc_filtered()$bathrooms,
-                       "\n",
-                       "zipcode:",
-                       kc_filtered()$zipcode)
-      )
-  })
-    kc_crime <- kc_housing %>%
-      filter(price >= 2500000)
-    crime_filtered_summary <- crime %>%
-      filter(State == "WA") %>%
-      filter(Officer.Injured == "No")
-    output$crime_map_summary <- renderLeaflet({
-      map <- leaflet() %>%
-        addProviderTiles("CartoDB.Positron") %>%
-        addCircleMarkers(
-          data = crime_filtered_summary,
-          lng = ~Longitude,
-          lat = ~Latitude,
-          color = "red"
-        ) %>%
-        addCircleMarkers(
-          data = kc_crime,
-          lng = ~long,
-          lat = ~lat,
-          color = "blue"
-        )
-    })
-
 }
