@@ -70,4 +70,57 @@ colnames(summary_table) <-  c("Zipcode", "Average Price", "Bedrooms", "Bathrooms
   output$table <- renderTable({
     summary_table
   })
+  
+  #crime map server
+  crime_filtered <- reactive({
+    crime %>%
+      filter(Officer.Injured == input$case) %>%
+      select(Date,
+             Longitude,
+             Latitude,
+             Officer.Injured)
+  })
+  kc_filtered <- reactive({
+    kc_housing %>%
+      filter(zipcode >= input$zc[1]) %>%
+      filter(zipcode <= input$zc[2]) %>%
+      filter(price >= input$prices[1]) %>%
+      filter(price <= input$prices[2]) %>%
+      select(price,
+             bedrooms,
+             bathrooms,
+             zipcode,
+             lat,
+             long)
+  })
+  output$crime_map <- renderLeaflet({
+    leaflet() %>%
+      addProviderTiles("CartoDB.Positron") %>%
+      addCircleMarkers(
+        data = crime_filtered(),
+        lng = ~Longitude,
+        lat = ~Latitude,
+        color = "red",
+        popup = paste0(crime_filtered()$Longtitude,
+                       "\n",
+                       crime_filtered()$Latitude)
+      ) %>%
+      addCircleMarkers(
+        data = kc_filtered(),
+        lng = ~long,
+        lat = ~lat,
+        color = "blue",
+        popup = paste0("price:",
+                       kc_filtered()$price,
+                       "\n",
+                       "bedroom#:",
+                       kc_filtered()$bedrooms,
+                       "\n",
+                       "bathroom#:",
+                       kc_filtered()$bathrooms,
+                       "\n",
+                       "zipcode:",
+                       kc_filtered()$zipcode)
+      )
+  })
 }
