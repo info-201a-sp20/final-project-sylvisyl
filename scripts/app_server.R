@@ -123,4 +123,26 @@ colnames(summary_table) <-  c("Zipcode", "Average Price", "Bedrooms", "Bathrooms
                        kc_filtered()$zipcode)
       )
   })
+    kc_crime <- kc_housing %>%
+      filter(price >= 2500000)
+    crime_filtered_summary <- crime %>%
+      filter(State == "WA") %>%
+      filter(Officer.Injured == "No")
+    output$crime_map_summary <- renderLeaflet({
+      map <- leaflet() %>%
+        addProviderTiles("CartoDB.Positron") %>%
+        addCircleMarkers(
+          data = crime_filtered_summary,
+          lng = ~Longitude,
+          lat = ~Latitude,
+          color = "red"
+        ) %>%
+        addCircleMarkers(
+          data = kc_crime,
+          lng = ~long,
+          lat = ~lat,
+          color = "blue"
+        )
+    })
+
 }

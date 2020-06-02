@@ -8,25 +8,10 @@ library(styler)
 library(leaflet)
 
 kc_housing <- read.csv("../data/kc_house_data.csv", stringsAsFactors = FALSE)
-kc_crime <- kc_housing %>%
-  filter(price >= 25000)
 crime <- read.csv("../data/SPD_Officer_Involved_Shooting__OIS__Data.csv",
                   stringsAsFactors = FALSE)
-crime_filtered_summary <- crime %>%
-  filter(State == "WA") %>%
-  filter(Officer.Injured == "No")
-summary_crime_map <- leaflet() %>%
-  addCircleMarkers(
-    data = crime_filtered_summary,
-    lng = ~Longitude,
-    lat = ~Latitude,
-    color = "red"
-  ) %>%
-  addCircleMarkers(
-    data = kc_crime,
-    lng = ~long,
-    lat = ~lat,
-    color = "blue")
+
+
 
 summary_page <- tabPanel(
   "Conclusion",
@@ -63,7 +48,8 @@ summary_page <- tabPanel(
     region might need a higher proportion of armed gurads to stabilize the community; 
     second, we could vaguely predict the prices of a house based on the region and 
     the crime rates around it."),
-  leafletOutput(outputId = "summary_crime_map"),
+  leafletOutput("crime_map_summary"),
   br(),
   )
 )
+
