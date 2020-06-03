@@ -54,7 +54,7 @@ second_side_widget <- selectInput(
 
 page_one <- tabPanel(
   "Housing price",
-  titlePanel("King county housing price"),
+  titlePanel(h1("King county housing price")),
   sidebarLayout(
     sidebarPanel(
       tags$div(class = "Calculator",
@@ -74,7 +74,9 @@ page_one <- tabPanel(
         can help you to visualize different aspect of housing
         in relation to the housing price based on zipcode
         in King county."),
-      plotlyOutput(outputId = "scatter")
+      tags$div(class = "interactive_map",
+        plotlyOutput(outputId = "scatter")
+      )
     )
   )
 )

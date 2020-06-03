@@ -48,7 +48,7 @@ Y_values <- selectInput(
 
 page_three <- tabPanel(
   "Housing in different years",
-  titlePanel("Year Informations"),
+  titlePanel(h1("Year Informations")),
   sidebarLayout(
     sidebarPanel(
       year_interval,
@@ -56,7 +56,9 @@ page_three <- tabPanel(
       Y_values
     ),
     mainPanel(
-        plotlyOutput(outputId = "histogram")
+      tags$div(class = "interactive_map",
+        plotlyOutput(outputId = "liner")
+      )
     )
   )
 )

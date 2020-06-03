@@ -4,6 +4,7 @@ library(ggplot2)
 library(dplyr)
 library(plotly)
 library(leaflet)
+library(shinythemes)
 
 # source
 source("app_ui.R")

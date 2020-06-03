@@ -36,7 +36,7 @@ widget_3 <- selectInput("case", "3.Select the cases shown:",
 #layout
 map_page <- tabPanel(
   "Crime and housing",
-  titlePanel("King couty housing and security"),
+  titlePanel(h1("King couty housing and security")),
   sidebarLayout(
     sidebarPanel(
       widget_1,
@@ -44,9 +44,11 @@ map_page <- tabPanel(
       widget_2,
       br(),
       widget_3
-    ),
+      ),
     mainPanel(
+      tags$div(class = "interactive_map",
       leafletOutput("crime_map")
+      )
     )
   )
 )

@@ -17,14 +17,17 @@ source("overview_page.R")
 source("crime_map.R")
 
 ui <- fluidPage(
+  theme = shinytheme("sandstone"),
   includeCSS("styles.css"),
+  tags$div(class = "navigation",
     navbarPage(
-    "King County Housing",
-    overview,
-    page_one,
-    page_three,
-    map_page,
-    summary_page
+      "King County Housing",
+      overview,
+      page_one,
+      page_three,
+      map_page,
+      summary_page
   )
+    )
 )
 

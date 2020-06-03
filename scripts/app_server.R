@@ -53,8 +53,8 @@ server <- function(input, output) {
   })
 
 # Third page visualization
-  output$histogram <- renderPlotly({
-    his_plot <- ggplot(data = year_selected) +
+  output$liner <- renderPlotly({
+    liner_plot <- ggplot(data = year_selected) +
     geom_line(mapping = aes_string(x = "yr_built", y = input$y_axis), color = input$color) +
     scale_x_continuous(limits = input$Interval) +
       labs(
@@ -62,7 +62,7 @@ server <- function(input, output) {
         x = "Year built (years)",
         y = NULL
       )
-    return(his_plot)
+    return(liner_plot)
   })
 
 # summary page table
