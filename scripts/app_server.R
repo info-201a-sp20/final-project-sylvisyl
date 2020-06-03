@@ -58,9 +58,9 @@ server <- function(input, output) {
     geom_line(mapping = aes_string(x = "yr_built", y = input$y_axis), color = input$color) +
     scale_x_continuous(limits = input$Interval) +
       labs(
-        title = "Overview of King Country Housing each year",
+        title = "Overview of King County Housing each year",
         x = "Year built (years)",
-        y = NULL
+        y = "Number of built"
       )
     return(liner_plot)
   })

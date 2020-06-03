@@ -56,6 +56,9 @@ page_three <- tabPanel(
       Y_values
     ),
     mainPanel(
+      p("The following chart is going to answer
+        how King County Housing change from 1900 to 2015,
+        mainly about the housing system."),
       tags$div(class = "interactive_map",
         plotlyOutput(outputId = "liner")
       )
