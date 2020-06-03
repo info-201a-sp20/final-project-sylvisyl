@@ -66,8 +66,9 @@ summary_page <- tabPanel(
     see that the houses built were also increasingly larger. This shows that perhaps
     the average person looking for housing in Seattle was growing increasingly 
     wealthy. This could help explain the lack of affordable housing and increasing 
-    homelessness population in Seattle."),
-  plotlyOutput("bar_chart")
+    homelessness population in Seattle. The following bar chart shows the average
+    price of house sale per year built in Seattle."),
+  plotlyOutput("year_table")
   )
 )
 
