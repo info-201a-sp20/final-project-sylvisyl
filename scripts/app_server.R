@@ -92,11 +92,11 @@ colnames(summary_table) <-  c("Zipcode", "Average Price", "Bedrooms", "Bathrooms
 # summary page bar chart for house price by year
   modified_df <- kc_housing %>%
     group_by(yr_built) %>%
-    summarise(avg_price = mean(price))
+    summarise(avg_sqft = mean(sqft_living))
   
   bar_chart <- plot_ly(
     x = modified_df$yr_built,
-    y = modified_df$avg_price,
+    y = modified_df$avg_sqft,
     name = "Average price per year",
     type = "bar"
   )

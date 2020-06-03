@@ -67,7 +67,8 @@ summary_page <- tabPanel(
     the average person looking for housing in Seattle was growing increasingly 
     wealthy. This could help explain the lack of affordable housing and increasing 
     homelessness population in Seattle. The following bar chart shows the average
-    price of house sale per year built in Seattle."),
+    square footage of houses built in Seattle each year. You can see a slight trend
+    upwards."),
   plotlyOutput("year_table")
   )
 )
