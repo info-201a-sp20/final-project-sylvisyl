@@ -34,7 +34,7 @@ color_selected <- selectInput(
   selected = "Red"
 )
 
-Y_values <- selectInput(
+y_values <- selectInput(
   inputId = "y_axis",
   label = "Select the value you want to display on the y-axis",
   choices = list(
@@ -53,7 +53,7 @@ page_three <- tabPanel(
     sidebarPanel(
       year_interval,
       color_selected,
-      Y_values
+      y_values
     ),
     mainPanel(
       p("The following chart is going to answer
