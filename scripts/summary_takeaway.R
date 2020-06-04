@@ -69,7 +69,9 @@ summary_page <- tabPanel(
     homelessness population in Seattle. The following bar chart shows the average
     square footage of houses built in Seattle each year. You can see a slight trend
     upwards."),
-  plotlyOutput("year_table")
+  tags$div(class = "bottom",
+    plotlyOutput("year_table")
+  )
   )
 )
 
