@@ -20,8 +20,10 @@ overview <- tabPanel(
       rates are high in King County. We were hoping to use this data to better
       understand what the housing market is like in King County. As students
       at the University of Washington, this issue is important and relevant
-      to us. The data set can be found here:
-      https://www.kaggle.com/harlfoxem/housesalesprediction"),
+      to us. The data set can be found here:",
+      a("https://www.kaggle.com/harlfoxem/housesalesprediction"
+        , href = "https://www.kaggle.com/harlfoxem/housesalesprediction")
+      ),
     h2("Questions"),
     img("", src = "https://images.freeimages.com/images/large-previews/9b4/seattle-skyline-1541208.jpg"),
     p("The questions we aim to answer using this dataset will help to illustrate
