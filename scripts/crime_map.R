@@ -46,6 +46,10 @@ map_page <- tabPanel(
       widget_3
       ),
     mainPanel(
+      p("In this section, the following intereact map
+        would demonstrate the correlation between houses
+        sites and the crime cases, to see whether safety
+        is a huge factor for housing price."),
       tags$div(class = "interactive_map",
       leafletOutput("crime_map")
       )
@@ -98,6 +102,7 @@ server <- function(input, output) {
         data = kc_filtered(),
         lng = ~long,
         lat = ~lat,
+        radius = 0.05,
         color = "blue",
         popup = paste0("price:",
                        kc_filtered()$price,

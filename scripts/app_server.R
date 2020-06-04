@@ -146,6 +146,7 @@ colnames(summary_table) <-  c("Zipcode", "Average Price", "Bedrooms", "Bathrooms
         data = kc_filtered(),
         lng = ~long,
         lat = ~lat,
+        radius = 0.05,
         color = "blue",
         popup = paste0("price:",
                        kc_filtered()$price,
