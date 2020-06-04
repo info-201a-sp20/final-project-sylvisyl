@@ -40,8 +40,8 @@ server <- function(input, output) {
 
 # first page main visualization 
   output$scatter <- renderPlotly({
-    title <- paste0("Relationship between price and ",
-                    input$select, " based on zipcode")
+    title <- paste0("Relationship Between Price and ",
+                    input$select, " Based on Zipcode")
     plot <- ggplot(data = zipcode_summary) +
       geom_point(mapping = aes_string(x = input$select, y = "avg_price")) +
       labs(
