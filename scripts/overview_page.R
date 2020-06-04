@@ -1,3 +1,5 @@
+#Set up
+
 library(shiny)
 library(dplyr)
 library(ggplot2)
@@ -6,6 +8,7 @@ library(styler)
 
 kc_housing <- read.csv("../data/kc_house_data.csv", stringsAsFactors = FALSE)
 
+# Overview page 
 overview <- tabPanel(
   "Overview",
   titlePanel(h1("Overview")),

@@ -10,6 +10,7 @@ library(styler)
 
 kc_housing <- read.csv("../data/kc_house_data.csv", stringsAsFactors = FALSE)
 
+# Source
 source("first_page.R")
 source("summary_takeaway.R")
 source("third_page.R")
