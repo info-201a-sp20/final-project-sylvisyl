@@ -4,7 +4,7 @@ library(ggplot2)
 library(lintr)
 library(styler)
 
-kc_housing <- read.csv("../data/kc_house_data.csv", stringsAsFactors = FALSE)
+kc_housing <- read.csv("data/kc_house_data.csv", stringsAsFactors = FALSE)
 
 year_maxium <- max(kc_housing$yr_built, na.rm = TRUE)
 year_minum <- min(kc_housing$yr_built, na.rm = TRUE)

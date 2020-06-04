@@ -3,9 +3,9 @@
 library(dplyr)
 library(leaflet)
 library(shiny)
-kc_housing <- read.csv("../data/kc_house_data.csv",
+kc_housing <- read.csv("data/kc_house_data.csv",
                        stringsAsFactors = FALSE)
-crime <- read.csv("../data/SPD_Officer_Involved_Shooting__OIS__Data.csv",
+crime <- read.csv("data/SPD_Officer_Involved_Shooting__OIS__Data.csv",
                   stringsAsFactors = FALSE)
 crime <- crime %>%
   filter(State == "WA")

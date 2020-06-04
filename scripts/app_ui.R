@@ -8,7 +8,7 @@ library(leaflet)
 library(lintr)
 library(styler)
 
-kc_housing <- read.csv("../data/kc_house_data.csv", stringsAsFactors = FALSE)
+kc_housing <- read.csv("data/kc_house_data.csv", stringsAsFactors = FALSE)
 
 source("first_page.R")
 source("summary_takeaway.R")

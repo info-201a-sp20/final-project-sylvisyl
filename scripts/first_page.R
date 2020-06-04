@@ -6,7 +6,7 @@ library(ggplot2)
 library(lintr)
 library(styler)
 
-kc_housing <- read.csv("../data/kc_house_data.csv", stringsAsFactors = FALSE)
+kc_housing <- read.csv("data/kc_house_data.csv", stringsAsFactors = FALSE)
 
 zipcode_summary <- kc_housing %>%
   group_by(zipcode) %>%
