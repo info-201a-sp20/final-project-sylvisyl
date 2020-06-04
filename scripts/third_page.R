@@ -1,3 +1,4 @@
+# Set up 
 library(shiny)
 library(dplyr)
 library(ggplot2)
@@ -6,6 +7,7 @@ library(styler)
 
 kc_housing <- read.csv("data/kc_house_data.csv", stringsAsFactors = FALSE)
 
+# Data 
 year_maxium <- max(kc_housing$yr_built, na.rm = TRUE)
 year_minum <- min(kc_housing$yr_built, na.rm = TRUE)
 
@@ -18,6 +20,7 @@ year_selected <- kc_housing %>%
     total_num = n()
   )
 
+# Widget 
 year_interval <- sliderInput(
   inputId = "Interval",
   label = "The year interval(years)",
