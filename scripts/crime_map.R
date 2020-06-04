@@ -35,8 +35,8 @@ widget_3 <- selectInput("case", "3.Select the cases shown:",
 )
 #layout
 map_page <- tabPanel(
-  "Crime and housing",
-  titlePanel(h1("King couty housing and security")),
+  "Crime and Housing",
+  titlePanel(h1("King Couty Housing and Security")),
   sidebarLayout(
     sidebarPanel(
       widget_1,
