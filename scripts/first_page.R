@@ -53,8 +53,8 @@ second_side_widget <- selectInput(
 )
 
 page_one <- tabPanel(
-  "Housing price",
-  titlePanel(h1("King county housing price")),
+  "Housing Price",
+  titlePanel(h1("King County Housing Price")),
   sidebarLayout(
     sidebarPanel(
       tags$div(class = "Calculator",

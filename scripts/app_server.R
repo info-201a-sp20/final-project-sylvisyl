@@ -46,8 +46,8 @@ server <- function(input, output) {
       geom_point(mapping = aes_string(x = input$select, y = "avg_price")) +
       labs(
         title = title,
-        x = "Your interested housing aspect",
-        y = "Average price"
+        x = "Your Interested Housing Aspect",
+        y = "Average Price"
       )
     return(plot)
   })
@@ -59,8 +59,8 @@ server <- function(input, output) {
     scale_x_continuous(limits = input$Interval) +
       labs(
         title = "Overview of King County Housing each year",
-        x = "Year built (years)",
-        y = "Number of built"
+        x = "Year Built (year)",
+        y = "Number of Built"
       )
     return(liner_plot)
   })
@@ -93,17 +93,20 @@ colnames(summary_table) <-  c("Zipcode", "Average Price", "Bedrooms", "Bathrooms
   modified_df <- kc_housing %>%
     group_by(yr_built) %>%
     summarise(avg_sqft = mean(sqft_living))
-  
+
   bar_chart <- plot_ly(
     x = modified_df$yr_built,
     y = modified_df$avg_sqft,
-    name = "Average price per year",
     type = "bar"
-  )
-
-output$year_table <- renderPlotly({
-  bar_chart
-})
+  ) %>%
+  layout(yaxis = list(title = "Total Average Square Footage of Houses Built"),
+         xaxis = list(title = "Year Built (year)"))
+  
+  
+  
+  output$year_table <- renderPlotly({
+    bar_chart
+  })
 
 # server for crime map
   crime_filtered <- reactive({

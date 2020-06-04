@@ -47,7 +47,7 @@ y_values <- selectInput(
 )
 
 page_three <- tabPanel(
-  "Housing in different years",
+  "Housing in Different Years",
   titlePanel(h1("Year Informations")),
   sidebarLayout(
     sidebarPanel(

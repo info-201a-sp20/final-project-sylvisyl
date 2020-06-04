@@ -17,7 +17,7 @@ summary_page <- tabPanel(
   "Conclusion",
   titlePanel(h1("Summary Takeaways")),
   fluidPage(
-  h2("First summary takeaway"),
+  h2("First Summary Takeaway"),
   p("Overall, by looking at the following table, it is evident
     to say that most of the houses in King County tends to have
     three to four bedrooms and two to three bathrooms. Most of
@@ -38,7 +38,7 @@ summary_page <- tabPanel(
     tableOutput(outputId = "table")
     ),
   br(),
-  h2("Second summary takeaway"),
+  h2("Second Summary Takeaway"),
   p("Based on a specifc condition of the crime rates intereact maps and the following attache
   chart (blue = houses, and red = crime cases), we can notice that the
     region that often happen crime cases tend to have lower selling prices,
@@ -55,7 +55,7 @@ summary_page <- tabPanel(
     the crime rates around it."),
   leafletOutput("crime_map_summary"),
   br(),
-  h2("Third summary takeaway"),
+  h2("Third Summary Takeaway"),
   p("The Housing in Different Years tab shows several clear trends in housing from
     1900 to 2015. Overall, it's clear that houses are gettting bigger and are 
     built more frequently. The total number of houses built, total bedrooms, total
